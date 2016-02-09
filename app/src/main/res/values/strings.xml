@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LocationActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_location_interface1">LocationInterface1</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_sound_interface">SoundInterface</string>
+    <string name="title_activity_timeinterface">timeinterface</string>
+    <string name="title_activity_soundinterfacetime">Soundinterfacetime</string>
+</resources>
