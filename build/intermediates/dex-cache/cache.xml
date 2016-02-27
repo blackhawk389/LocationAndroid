@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="2e24e5f1b11170163028277de63f709e42525db4">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-d3395576fb342fb1fd3a857d6db6da6a7daf7b6a.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-7e0a6f9fb55774096e29ef4c0a878d25778a814a.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-75790fb8d63d71dab8141693e4b75d728a5995ed.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-da43de9c7c0fa4c6196902008295d59436248f33.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-353f8a3dca96a3f1ba7a67b0c08ec4e582b4a85f.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c2ac04c5b232f6f0658ee4f1c13be09cd76406e2">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-c069224fad774853c067ebf40cb0c891d0f9b18e.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-ddcbe04ecd2c4cbd7242cd7ee5c9af121b22a6e7.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-f0872b29f2d4d2fb2c44a0a845b9ff008c03201f.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-818b20196592e48187514dafce19fe57d2ed145c.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-bbc632221dc49db30cd13075fffd0140866b5be9.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-6db1567e603ef92c8038970ecef4b241e84c26be.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-13ddd042f4b37d62035207ae0f3d8a613bc81961.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-eb020579d3f824f0693d60d691af52bf9a604720.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-2c903046efea26c044c0f834453cbc9f12fa585a.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-631b19aa142bad135d73328df9aba1fbbddbcfa5.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-2bfc8f1b9453305f828cd90987bdbbe9f85a4b2b.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-953ffd9fffdcc6811d28be1a3a2eec1f71b842f9.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-649f2feebeb4a438aaf6662cffdc7746606502c6.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-d2fd3b22f103918c8d447bcb5193c827170aabb5.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="2e24e5f1b11170163028277de63f709e42525db4">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-310abe24023fd883f83f795b19c1d4874ccfc0ea.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-334d0a81907f4b07d482a04f93f222836a51a51a.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-e26e84fd1cf2b4eab5b20410fd3686b681547ff7.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-3fc94dafcd7ccff980f18c03dd4dee43a660d995.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-65e6d9b20258248a3b5b2327a8aeb03db175ae17.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-99efddca39948c6bdda4d1bf8f361b68dde85ff2.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-3b104d4908be0a11efe4c5211a79cfa01257b936.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-a6062981ac3b406df327f4261e20a7d605bca3bd.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-6c8d3a4bdec5d02c55a19a8bb4489f13ddf5f056.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-4603a22a7f867718f6a35a1bd789459ec5c49a29.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-8edfbe2e7a9c049dbba5beb11c0727d1ed85f4b8.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-406dace97e02ab0e17be84aaa051c76af4c06b6c.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-e38583341b6be951779021ea529634d9849f3c4e.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-bf40c71567174d8634c775f37d26cd30bb02d414.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-58a2526b58586a69c10905c4eaf61cfd04963351.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-ad02ecfdf3389f8af92dc94550f0d99cfe207f53.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-fdb207f0d94380ad321e50e950e25640a454c28c.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-e0885407fd131768776b852826cab46276c8b7bc.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-d1f7aae87e6542cdb87b8492b9001e43820d5576.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-92d83b9bacca68a49b54aefc4d40087b346acac3.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-9aec019a571d90a6fa2599731c0309477cddcb7f.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-77852b3f1c59fe2bc589165cff6db09c31952bcc.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-7d8bf319805e9d7427381713f76e2f60f7cca07e.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-7322945bf3d67219a70f8737992a4a6c9739a9fa.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-53747d48036ae4bbb51b76ed6b99accd3ac8698e.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-e0d979fc507c7958c8c58e8b2741fd5430426c74.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-a0c64601919c6394ed27f9a880366aa45e56fc06.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-ffc18339823cd4715546cd0c3d581878bb481ffe.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-ace64e2a5cf5c396e17cf2c87aa50ea73e229078.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c2ac04c5b232f6f0658ee4f1c13be09cd76406e2">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-1134d0546ebc44f645524a3138ac3df89073174a.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-6286fa08319b52e6102835d11182110388214aa7.jar" />
+    </item>
+    <item
+        jar="E:\LocationActivity\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="E:\LocationActivity\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-c3db676c434b8e649e044c2a5f7061720ce809ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-6e9e87d547637ef2a0b9240d4002ea14b008a502.jar" />
+    </item>
+    <item
+        jar="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="C:\Users\SarahN\Dropbox\LocationActivity\app\build\intermediates\pre-dexed\debug\classes-68249effa3b15172a8c5e1346a2e8b7d07262f35.jar" />
+    </item>
+
+</items>
