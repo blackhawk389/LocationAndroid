@@ -18,26 +18,15 @@ import android.widget.Toast;
 
         AudioManager audioManager;
         Context context;
-        int pr;
-
-
 
                     @Override
         public void onReceive(Context arg0, Intent intent) {
-
-
                         audioManager= (AudioManager)arg0.getSystemService(Context.AUDIO_SERVICE);
-                        pr = audioManager.getRingerMode();
-                        SharedPreferences sharedPreference1 = arg0.getSharedPreferences("cur", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor = sharedPreference1.edit();
-                        editor.putInt("pr1", pr);
-                        editor.commit();
-
             String k = LocationManager.KEY_PROXIMITY_ENTERING;
-
+            // Key for determining whether user is leaving or entering
 
             boolean state = intent.getBooleanExtra(k, false);
-
+            //Gives whether the user is entering or leaving in boolean form
 
 
 
@@ -59,14 +48,7 @@ import android.widget.Toast;
                 Toast.makeText(arg0, "Your phone will go silent", Toast.LENGTH_SHORT).show();
 
 
-            } else{
-
-                SharedPreferences sharedPreference = arg0.getSharedPreferences("cur",Context.MODE_PRIVATE);
-                int getprofile = sharedPreference.getInt("pr1" , 0);
-
-                if(getprofile == 2)
-
-
+            } else {
                     audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
                     Toast.makeText(arg0, "Exiting, back to previous settings", Toast.LENGTH_SHORT).show();
 

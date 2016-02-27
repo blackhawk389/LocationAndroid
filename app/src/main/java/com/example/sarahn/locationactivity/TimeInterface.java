@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -34,6 +35,7 @@ public class TimeInterface extends ActionBarActivity {
     RadioButton rb1time;
     RadioButton rb2time;
     RadioGroup rg;
+    AudioManager audioManager;
 
 
 
@@ -150,24 +152,13 @@ public class TimeInterface extends ActionBarActivity {
         }
 
 
-
-
         HelperAdaptor helperAdaptortime = new HelperAdaptor(this);
        String name = nametexttime.getText().toString();
-        boolean isinsertedtime = helperAdaptortime.insertdatatime(0, name, hour, hour1, minute, minute1, soundval);
-        if(isinsertedtime){
-            Toast.makeText(this, "data inserted" , Toast.LENGTH_SHORT).show();
-        }
-        else{
-            Toast.makeText(this, "data not inserted" , Toast.LENGTH_SHORT).show();
-        }
+       int curprofiletime = audioManager.getRingerMode();
+        boolean isinsertedtime = helperAdaptortime.insertdatatime(name, hour, hour1, minute, minute1, soundval, curprofiletime);
 
         setstartalarm(hour, minute);
         setendalarm(hour1, minute1);
-
-        Intent intentcomplete = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intentcomplete);
-
     }
 
     public void setstartalarm(int a, int b){

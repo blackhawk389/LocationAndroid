@@ -2,6 +2,7 @@ package com.example.sarahn.locationactivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ public class SoundInterface extends Activity {
     private RadioButton rb;
     private RadioButton rb1;
     int value1;
+
 
 
     @Override

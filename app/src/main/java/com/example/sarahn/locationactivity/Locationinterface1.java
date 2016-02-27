@@ -19,18 +19,17 @@ import android.widget.Toast;
 
 public class Locationinterface1 extends Activity {
 
-
     EditText nametext;
     double lat, lng;
     int profile;
     int radius = 100;
-    AudioManager audioManager;
+    public AudioManager audioManager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location_interface);
-
 
         audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
@@ -91,31 +90,21 @@ public class Locationinterface1 extends Activity {
         SharedPreferences sharedPreference = getSharedPreferences("latlngdata",Context.MODE_PRIVATE);
         lat = sharedPreference.getFloat("latitude" , 0);
         lng = sharedPreference.getFloat("longitude", 0);
-       // Toast.makeText(this, " lat long data" +lat+ " " +lng, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, " lat long data" +lat+ " " +lng, Toast.LENGTH_SHORT).show();
 
-
-
-
+        int currentprofile =  audioManager.getRingerMode();
         String name = nametext.getText().toString();
-        LocationHelperAdaptor locationhelperAdaptor = new LocationHelperAdaptor(this);
 
-        boolean isinserted = locationhelperAdaptor.insertdata(name, lat, lng, profile);
+        HelperAdaptor helperAdaptor = new HelperAdaptor(this);
+        boolean isinserted = helperAdaptor.insertdata(name, lat, lng, profile, currentprofile);
 
-        if(isinserted){
-             Toast.makeText(this, "data inserted" , Toast.LENGTH_SHORT).show();
-        }
-        else
-        {
-            Toast.makeText(this, "data not inserted" , Toast.LENGTH_SHORT).show();
+        if (isinserted == true) {
+            Toast.makeText(this, " data has been saved successfully", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, " data no inserted successfully", Toast.LENGTH_SHORT).show();
         }
 
         proximity();
-
-        Intent intentlocation1 = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intentlocation1);
-
-
-
     }
 
     public void proximity(){
@@ -127,6 +116,8 @@ public class Locationinterface1 extends Activity {
         lm.addProximityAlert(lat, lng, radius, -1, pi);
         Intent curlocationsave = new Intent(Locationinterface1.this, ProximityReceiver.class);
         curlocationsave.putExtra("sounds1", profile);
+
+
 
     }
 

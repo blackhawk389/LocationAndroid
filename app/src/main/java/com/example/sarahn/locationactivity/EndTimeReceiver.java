@@ -13,7 +13,6 @@ import android.widget.Toast;
 public class EndTimeReceiver extends BroadcastReceiver {
 
     AudioManager audioManager;
-    int getprofile;
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -22,12 +21,7 @@ public class EndTimeReceiver extends BroadcastReceiver {
 
         audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
 
-        SharedPreferences sharedPreference = context.getSharedPreferences("cur1", Context.MODE_PRIVATE);
-        getprofile = sharedPreference.getInt("pr2" , 0);
-
-        if(getprofile == 2) {
             audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
-        }
 
     }
 }

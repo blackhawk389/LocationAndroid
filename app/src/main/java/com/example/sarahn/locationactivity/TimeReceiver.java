@@ -15,7 +15,6 @@ import java.sql.Time;
 public class TimeReceiver extends BroadcastReceiver {
 
     AudioManager audioManager;
-    int pr2;
     @Override
     public void onReceive(Context context, Intent intent) {
 
@@ -23,14 +22,6 @@ public class TimeReceiver extends BroadcastReceiver {
         Toast.makeText(context, " Receiver class fired..!!", Toast.LENGTH_SHORT).show();
 
        audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
-
-        audioManager= (AudioManager)context.getSystemService(Context.AUDIO_SERVICE);
-        pr2 = audioManager.getRingerMode();
-        SharedPreferences sharedPreference1 = context.getSharedPreferences("cur1", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreference1.edit();
-        editor.putInt("pr2", pr2);
-        editor.commit();
-
         int i = intent.getIntExtra("sounds", 0);
 
         if(i == 2)

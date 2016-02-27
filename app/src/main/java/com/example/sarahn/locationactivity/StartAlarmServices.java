@@ -22,13 +22,14 @@ public class StartAlarmServices extends Service {
 
     public void onStart(Intent intent, int startId) {
         super.onStart(intent, startId);
+
+        Toast.makeText(this, "Alaram fired", Toast.LENGTH_SHORT).show();
         AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         SharedPreferences sharedPreferencetime = getSharedPreferences("startalarm",Context.MODE_PRIVATE);
         SharedPreferences.Editor editortime = sharedPreferencetime.edit();
         editortime.putInt("currentvalue", audioManager.getRingerMode());
         editortime.commit();
-        Toast.makeText(this, "Alaram fired", Toast.LENGTH_SHORT).show();
 
         if(time.soundval == 2) {
             audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);

@@ -6,89 +6,114 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 import android.widget.Toast;
 
 
-public class HelperAdaptor extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "mmhdatabase";
-    public static final String TABLE_NAME3 = "timetable";
-    public static final int DATABASE_VERSION = 2;
-    public static final String NAME1 = "_timeprofilename";
-    // public static final String PROFILE = "selectedprofile";
-    public static final String TIME_PROFILE = "selecteddtimeprofile";
-    public static final String START_HOUR = "starthour";
-    public static final String END_HOUR = "endhour";
-    public static final String ID="id";
-    public static final String START_MINUTE = "startmin";
-    public static final String END_MINUTE = "endmin";
-    public static final String CREATE_TABLE3 = " CREATE TABLE IF NOT EXISTS" + TABLE_NAME3 + " ("+ID+" INTEGER PRIMARY KEY," + NAME1 + " TEXT, " + START_HOUR + " INTEGER, " + END_HOUR + " INTEGER," + START_MINUTE + " INTEGER, " + END_MINUTE + " INTEGER, " + TIME_PROFILE + " INTEGER) ";
-    public static final String DROP_TABLE1 = " DROP TABLE IF EXISTS " + TABLE_NAME3;
-
-//tumhara pc slow hai ya net..?? net hoga ku k 2 din reh gy hain recharge mai aur data b kam hai
-    public Context context;
-
-    public HelperAdaptor(Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        this.context = context;
-
-    }
+    public class HelperAdaptor extends SQLiteOpenHelper{
+        public static final String DATABASE_NAME = "maindatabase";
+        public static final String TABLE_NAME = "locationtable";
+        public static final String TABLE_NAME2 = "timebasedtable";
+        public static final int DATABASE_VERSION = 1;
+        public static final String NAME = "_profilename";
+        public static final String NAME1 = "_timeprofilename";
+        public static final String LAT = "latitude";
+        public static final String LNG = "longitude";
+        public static final String PROFILE = "selectedprofile";
+        public static final String CUR_PROFILE= "currentprofile";
+        public static final String TIME_PROFILE = "selecteddtimeprofile";
+        public static final String START_HOUR = "starthour";
+        public static final String END_HOUR = "endhour";
+        public static final String START_MINUTE = "startmin";
+        public static final String END_MINUTE = "endmin";
+        public static final String CUR_PROFILE_TIME= "currentprofiletime";
+        public static final String CREATE_TABLE =  " CREATE TABLE " +TABLE_NAME+ " ("+NAME+ " TEXT PRIMARY KEY, " +LAT+ " INTEGER, " +LNG+ " INTEGER, " +PROFILE+ " INTEGER, "+CUR_PROFILE+" INTEGER) " ;
+        public static final String CREATE_TABLE2 = " CREATE TABLE " +TABLE_NAME2+ " ("+NAME1+ " TEXT PRIMARY KEY, " +CUR_PROFILE_TIME+ "INTEGER, " +START_HOUR+ " INTEGER, " +END_HOUR+ "INTEGER," +START_MINUTE+ " INTEGER, " +END_MINUTE+ "INTEGER, " +TIME_PROFILE+ " INTEGER) "  ;
 
 
-    @Override
-    public void onCreate(SQLiteDatabase db) {
+        public Context context;
 
-
-        try {
-
-            db.execSQL(CREATE_TABLE3);
-
-        } catch (SQLException e) {
+        public HelperAdaptor (Context context) {
+            super(context,DATABASE_NAME, null, DATABASE_VERSION);
+            this.context= context;
 
         }
 
-    }
 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
-      /*  try {
-
-            db.execSQL(DROP_TABLE1);
+        @Override
+        public void onCreate(SQLiteDatabase db) {
 
 
-            onCreate(db);
+            try {
+                Toast.makeText(context, "Oncreate called", Toast.LENGTH_LONG).show();
+                db.execSQL(CREATE_TABLE);
+                db.execSQL(CREATE_TABLE2);
 
+            }catch (SQLException e)
+            {
 
-        } catch (SQLException e) {
+            }
 
         }
-*/
-    }
 
+        @Override
+        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
-    public boolean insertdatatime(int id,String nametime, int hrstart, int hrend, int minstart, int minend, int pr) {
+            try {
+//
+//                Toast.makeText(context, "Onupgrade called", Toast.LENGTH_LONG).show();
+//                db.execSQL("DROP TABLE IF EXISTS" + TABLE_NAME);
+              //  onCreate(db);
 
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues1 = new ContentValues();
-        contentValues1.put(this.ID,id);
-        contentValues1.put(this.NAME1, nametime);
-        contentValues1.put(this.START_HOUR, hrstart);
-        contentValues1.put(this.END_HOUR, hrend);
-        contentValues1.put(this.START_MINUTE, minstart);
-        contentValues1.put(this.END_MINUTE, minend);
-        contentValues1.put(this.TIME_PROFILE, pr);
-        Log.d("Tag","Values:"+contentValues1.toString());
-        long result = db.insert(this.TABLE_NAME3, null, contentValues1);
-        Log.d("Tag","data insert id is:"+result);
-//lets try again and aagian
-        if (result == -1) {
-            return false;
-        } else {
-            return true;
+            }catch (SQLException e)
+            {
+
+            }
+
         }
 
-    }
+        public boolean insertdata(String name, double lt ,  double lg, int p, int cp) {
+
+            SQLiteDatabase db = this.getWritableDatabase();
+            ContentValues contentValues = new ContentValues();
+            contentValues.put(this.NAME, name);
+            contentValues.put(this.LAT, lt);
+            contentValues.put(this.LNG, lg);
+            contentValues.put(this.PROFILE, p);
+            contentValues.put(this.CUR_PROFILE, cp);
+            long id = db.insert(this.TABLE_NAME, null, contentValues);
+            if(id == -1)
+            {
+                return  false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        public boolean insertdatatime(String nametime, int hrstart , int hrend , int minstart, int minend, int pr, int cpt) {
+
+            SQLiteDatabase db = this.getWritableDatabase();
+            ContentValues contentValues = new ContentValues();
+            contentValues.put(this.NAME1, nametime);
+            contentValues.put(this.START_HOUR, hrstart);
+            contentValues.put(this.END_HOUR, hrend);
+            contentValues.put(this.START_MINUTE, minstart);
+            contentValues.put(this.END_MINUTE, minend);
+            contentValues.put(this.TIME_PROFILE, pr);
+            contentValues.put(this.CUR_PROFILE_TIME, cpt);
+
+            long id = db.insert(this.TABLE_NAME2, null, contentValues);
+            if(id == -1)
+            {
+                return false;
+            }
+            else {
+                return true;
+            }
+
+        }
+
+        }
 
 
-}
+

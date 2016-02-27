@@ -7,19 +7,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-//yaha sy shuru hota hai, agr tm screen dekh sko tou bht acha hoga wrna mri profile per screenshot hain app k, purani post
-//okey wait
 
 
 public class MainActivity extends ActionBarActivity {
 
-
+//    AudioManager am = getSystemService()
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     @Override
