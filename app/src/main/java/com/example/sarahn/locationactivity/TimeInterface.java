@@ -6,8 +6,8 @@ import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.media.AudioManager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,19 +16,17 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 import java.util.Calendar;
 
 
 public class TimeInterface extends ActionBarActivity {
 
-    EditText nametexttime;
-
-    Button btn1;
-    Button btn2;
     static final int DIALOG_ID = 0;
     static final int DIALOG_ID2 = 1;
+    EditText nametexttime;
+    Button btn1;
+    Button btn2;
     int hour, hour1;
     int minute, minute1;
     int soundval;
@@ -36,9 +34,26 @@ public class TimeInterface extends ActionBarActivity {
     RadioButton rb2time;
     RadioGroup rg;
     AudioManager audioManager;
+    private TimePickerDialog.OnTimeSetListener mTimeSetListener =
+            new TimePickerDialog.OnTimeSetListener() {
+                // the callback received when the user "sets" the TimePickerDialog in the dialog
+                public void onTimeSet(TimePicker view, int hourOfDay, int min) {
+                    hour = hourOfDay;
+                    minute = min;
+
+                }
+            };
+    private TimePickerDialog.OnTimeSetListener mTimeSetListener1 =
+            new TimePickerDialog.OnTimeSetListener() {
+                // the callback received when the user "sets" the TimePickerDialog in the dialog
+                public void onTimeSet(TimePicker view, int hourOfDay, int min) {
+                    hour1 = hourOfDay;
+                    minute1 = min;
+
+                }
 
 
-
+            };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +73,7 @@ public class TimeInterface extends ActionBarActivity {
 
     }
 
-    public void showtimepickerdialog(){
+    public void showtimepickerdialog() {
         btn1 = (Button) findViewById(R.id.button);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +84,7 @@ public class TimeInterface extends ActionBarActivity {
 
     }
 
-    public void showtimepickerdialog1(){
+    public void showtimepickerdialog1() {
         btn2 = (Button) findViewById(R.id.button2);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,31 +95,9 @@ public class TimeInterface extends ActionBarActivity {
 
     }
 
-    private TimePickerDialog.OnTimeSetListener mTimeSetListener =
-            new TimePickerDialog.OnTimeSetListener() {
-                // the callback received when the user "sets" the TimePickerDialog in the dialog
-                public void onTimeSet(TimePicker view, int hourOfDay, int min) {
-                    hour = hourOfDay;
-                    minute = min;
-
-                }
-            };
-
-    private TimePickerDialog.OnTimeSetListener mTimeSetListener1 =
-            new TimePickerDialog.OnTimeSetListener() {
-                // the callback received when the user "sets" the TimePickerDialog in the dialog
-                public void onTimeSet(TimePicker view, int hourOfDay, int min) {
-                    hour1 = hourOfDay;
-                    minute1 = min;
-
-                }
-
-
-            };
-
     @Override
-    protected Dialog onCreateDialog(int id){
-        switch(id){
+    protected Dialog onCreateDialog(int id) {
+        switch (id) {
             case DIALOG_ID:
                 return new TimePickerDialog(this, mTimeSetListener, hour, minute, false);
             case DIALOG_ID2:
@@ -138,8 +131,7 @@ public class TimeInterface extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void savetime(View view)
-    {
+    public void savetime(View view) {
 
         switch (rg.getCheckedRadioButtonId()) {
             case R.id.radioButton3:
@@ -153,35 +145,42 @@ public class TimeInterface extends ActionBarActivity {
 
 
         HelperAdaptor helperAdaptortime = new HelperAdaptor(this);
-       String name = nametexttime.getText().toString();
-       int curprofiletime = audioManager.getRingerMode();
+        String name = nametexttime.getText().toString();
+        int curprofiletime = audioManager.getRingerMode();
         boolean isinsertedtime = helperAdaptortime.insertdatatime(name, hour, hour1, minute, minute1, soundval, curprofiletime);
 
         setstartalarm(hour, minute);
         setendalarm(hour1, minute1);
     }
 
-    public void setstartalarm(int a, int b){
+    public void setstartalarm(int a, int b) {
 
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY, a);
         calendar.set(Calendar.MINUTE, b);
+
         Intent myIntent = new Intent(TimeInterface.this, TimeReceiver.class);
         myIntent.putExtra("sounds", soundval);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(TimeInterface.this, 1, myIntent, 0);
-        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
-        alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        alarmManager.set(AlarmManager.RTC, calculateMillis(calendar), pendingIntent);
 
     }
 
-    public void setendalarm(int c, int d){
+    public void setendalarm(int c, int d) {
 
         Calendar calendar1 = Calendar.getInstance();
         calendar1.set(Calendar.HOUR_OF_DAY, c);
         calendar1.set(Calendar.MINUTE, d);
+
         Intent myIntent1 = new Intent(TimeInterface.this, EndTimeReceiver.class);
         PendingIntent pendingIntent1 = PendingIntent.getBroadcast(TimeInterface.this, 1, myIntent1, 0);
-        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
-        alarmManager.set(AlarmManager.RTC, calendar1.getTimeInMillis(), pendingIntent1);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        alarmManager.set(AlarmManager.RTC, calculateMillis(calendar1), pendingIntent1);
+    }
+
+    private long calculateMillis(Calendar cal) {
+        int offset = cal.getTimeZone().getOffset(cal.getTimeInMillis());
+        return cal.getTimeInMillis() + offset;
     }
 }
